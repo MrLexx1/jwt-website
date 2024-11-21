@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNIGlsbWFuIiwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzIwODQ5NTAsImV4cCI6MTczMjA4NDk4MH0.wXvFktFhbfdN6X7XXXzJqY1Hg3C7yIZsMhIGoUy7Itw
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json 
+
+{
+    "name": "M ilman",
+    "email": "admin@admin.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json 
+
+{
+    "email" : "admin@admin.com",
+    "password" : "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
